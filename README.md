@@ -1,4 +1,4 @@
-## 框架使用
+## 框架搭建
 
 ```bash
 # 使用npm进行项目初始化，其中zt-tm是项目名
@@ -6,7 +6,11 @@ $ npm init ice zt-tm
 
 # 然后选择模板，这里我们选择pro ts
 $ Fusion Design Pro TypeScript template
+```
 
+## 框架使用
+
+```bash
 # 进入到zt-tm目录下
 $ cd zt-tm
 
@@ -22,7 +26,7 @@ $ npm start
 ```bash
 iconfont: https://www.iconfont.cn/ 矢量图标库  【OK】
 
-react-intl: 国际化方案 
+react-intl: 国际化方案
 
 百度统计：https://tongji.baidu.com/
 
