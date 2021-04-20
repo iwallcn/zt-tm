@@ -5,8 +5,8 @@ import { setLocale, getLocale } from '@/locales/locale';
 import styles from './index.module.scss';
 
 export default injectIntl(({ intl }) => {
-  console.log(getLocale(), 333);
   const [lang, setLang] = useState(getLocale());
+  console.log('lang', lang);
   const selectLang = (value) => {
     setLocale(value);
     setLang(value);

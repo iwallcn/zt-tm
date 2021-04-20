@@ -19,6 +19,6 @@ module.exports = getESLintConfig('react-ts', {
     eqeqeq: 2, //必须使用全等
     quotes: [2, 'single'], //引号类型 `` "" ''
     'prefer-spread': 0, //首选展开运算
-    'max-len': [2, { code: 500 }], // 单个文件代码行数不得超过400行
+    'max-len': [2, { code: 500 }], // 单个文件代码行数不得超过500行
   },
 });

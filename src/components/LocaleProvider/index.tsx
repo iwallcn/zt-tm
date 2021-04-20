@@ -11,8 +11,8 @@ import enUS from '@alifd/next/lib/locale/en-us';
 import zhCN from '@alifd/next/lib/locale/zh-cn';
 
 // 引入 locale 配置文件
-import localeEnUS from '@/locales/en-US';
-import localeZhCN from '@/locales/zh-CN';
+import localeEnUS from '@/locales/en';
+import localeZhCN from '@/locales/zh';
 
 // 设置语言包
 addLocaleData([...en, ...zh]);
@@ -38,15 +38,11 @@ interface Props {
 function LocaleProvider(props: Props) {
   const { locale, children } = props;
 
-  const myLocale = localeInfo[locale]
-    ? localeInfo[locale]
-    : localeInfo['en-US'];
+  const myLocale = localeInfo[locale] ? localeInfo[locale] : localeInfo['en-US'];
 
   return (
     <IntlProvider locale={myLocale.appLocale} messages={myLocale.appMessages}>
-      <ConfigProvider locale={myLocale.nextLocale}>
-        {React.Children.only(children)}
-      </ConfigProvider>
+      <ConfigProvider locale={myLocale.nextLocale}>{React.Children.only(children)}</ConfigProvider>
     </IntlProvider>
   );
 }
