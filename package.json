@@ -21,10 +21,12 @@
     "sortablejs": "^1.12.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
     "@iceworks/spec": "^1.0.0",
     "build-plugin-fusion": "^0.1.0",
     "build-plugin-moment-locales": "^0.1.0",
     "eslint": "^6.8.0",
+    "husky": "^6.0.0",
     "ice.js": "^1.0.0",
     "stylelint": "^13.2.0"
   },
@@ -36,6 +38,12 @@
     "eslint:fix": "npm run eslint -- --fix",
     "stylelint": "stylelint \"**/*.{css,scss,less}\"",
     "design": "icejs build --design"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm run lint"
+    }
   },
   "repository": {
     "type": "git",
