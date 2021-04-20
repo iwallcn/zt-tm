@@ -21,6 +21,18 @@ $ npm install
 $ npm start
 ```
 
+## 框架代码质量保障
+
+```bash
+@iceworks/spec
+
+eslint
+
+stylelint
+
+@commitlint/cli
+```
+
 ## 框架中加入如下功能点
 
 ```bash
