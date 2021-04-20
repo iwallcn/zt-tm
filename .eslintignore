@@ -1,9 +1,11 @@
 # 忽略目录
+.ice/
+.vscode/
+node_modules/
+public/
 build/
 tests/
 demo/
-.ice/
-node_modules/
 
 # node 覆盖率文件
 coverage/
