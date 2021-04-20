@@ -16,7 +16,7 @@ const UserProfile = ({ name, avatar, mail }) => {
   return (
     <div className={styles.profile}>
       <div className={styles.avatar}>
-        <CustomIcon type={avatar}></CustomIcon>
+        <CustomIcon type={avatar} />
       </div>
       <div className={styles.content}>
         <h4>{name}</h4>
